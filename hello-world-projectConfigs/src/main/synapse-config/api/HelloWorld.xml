@@ -3,7 +3,18 @@
     <resource methods="GET" uri-template="/leaders">
         <inSequence>
             <payloadFactory media-type="json">
-                <format>{"Hello":"Integation"}</format>
+                <format>{"Hello":"leaders"}</format>
+                <args/>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/loosers">
+        <inSequence>
+            <payloadFactory media-type="json">
+                <format>{"Hello":"loosers"}</format>
                 <args/>
             </payloadFactory>
             <respond/>
